@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+     
+    <meta charset="UTF-8">
+    <title>Crystal Collector</title>
+    <link rel="stylesheet" href=https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--JavaScript-->
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron" style="background-color: maroon; color: white">
+            <div class = "container">
+                <h1 class="text-center">Crystal Collector</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <!--instructions-->
+            <div class="col-lg-12">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <div class="panel-title">
+                            <h3 class="panel-title text-center" style="background-color:mediumturquoise">Game Rules and Instructions</h3>
+                        </div>
+                        <div class="panel-body">
+                            Welcome to Crystal Collector. At the start of the game you will be given a random number. Your objective is, by clicking the crystals below, to match the value of the number given to you. If you go over the value of the random number then it will count as a loss but if you match the value of the random number you win! Each crystal is given a random value at the start of each round to keep the game fresh. 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <!--target score-->
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <div class="panel-title">
+                             <h3  class="panel-title text-center" style="background-color:mediumturquoise">Your Target Score</h3>
+                        </div>
+                        <div  class="panel-body">
+                                <h3 id="targetscore" class="text-center"></h3> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--my score-->
+            <div class="col-lg-3">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <div class="panel-title">
+                                 <h3  class="panel-title text-center" style="background-color:mediumturquoise">Your Score</h3>
+                            </div>
+                            <div class="panel-body">
+                                    <h3 id="myscore" class="text-center"></h3> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <!--crystal images-->
+            <div class="col-lg-6">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                             <div class="panel-title">
+                                 <h3 class="panel-title text-center" style="background-color:mediumturquoise">CRYSTALS</h3>
+                            </div>
+                            <div class="panel-body text-center">
+                                    <img id="green" src="assets/images/Crystal green.jpg" style="width:100px;height:100px;"  alt="Green Crystal"> 
+                                    <img id="blue" src="assets/images/crystal blue.jpg" style="width:100px;height:100px;" alt="Blue Crystal"> 
+                                    <img id="red" src="assets/images/crystal red.jpg" style="width:100px;height:100px;" alt="Red Crystal"> 
+                                    <img id ="yellow" src="assets/images/crystal yellow.jpg" style="width:100px;height:100px;" alt="Yellow Crystal"> 
+                            </div>
+                        </div>
+                    </div>
+
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <div class="panel-title"><h3 class="panel-title text-center" style="background-color:mediumturquoise">Your Losses</h3>
+                                </div>
+                                <div class="panel-body"><h3 id="losscounter" class="text-center">0</h3> 
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-6">
+                 <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <div class="panel-title">
+                                     <h3 class="panel-title text-center" style="background-color:mediumturquoise">Your Wins</h3>
+                            </div>
+                            <div class="panel-body">
+                                        <h3 id="wincounter" class="text-center">0</h3> 
+                            </div>
+                        </div>
+                </div>
+                
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+
+  
+</body>
+</html>
